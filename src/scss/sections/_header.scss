@@ -1,0 +1,16 @@
+.header__container {
+    height: 60px;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    background-color: $main-color;
+}
+
+.header {
+    &__logo {
+        height: 50px;
+        cursor: pointer;
+    }
+}

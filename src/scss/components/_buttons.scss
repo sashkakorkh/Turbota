@@ -1,0 +1,52 @@
+.btn__enter {
+    display: flex;
+    align-items: center;
+    &-logo {
+        fill:  $theme-color;
+    }
+    &-text {
+        padding-left: 10px;
+        color: $theme-color;
+    }
+}
+
+.btn__create-visit {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    height: 35px;
+    padding: 0 20px;
+
+    border-radius: 40px;
+    background-color: $theme-color;
+    color: $main-color;
+
+    transition-duration: .3s;
+    padding-left: 15px;
+
+    display: none;
+    
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &-text {
+        padding-left: 10px;
+    }
+}
+
+.btn__search {
+    @extend .btn__create-visit;
+
+    display: block;
+    
+    &-text {
+        padding-left: 15px;
+    }
+}
+
+.btn__submit {
+    @extend .btn__search;
+    width: 100px;
+}

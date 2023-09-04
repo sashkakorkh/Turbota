@@ -1,0 +1,96 @@
+.visit {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 15px;
+    
+    
+    & p {
+        // padding-left: 20px;
+        // padding-right: 20px;
+       padding-top: 15px;
+       
+
+    }
+    &__form {
+        width: 230px;
+        background-color: $main-color;
+        justify-self: center;
+        background: $main-color;
+        border: 1px solid $main-text-color;
+        border-radius: 5px;
+        box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+        color:black;
+        display: grid;
+        padding-bottom:20px;
+    }
+    &__form_delete {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        top:10px;
+        right: 10px;
+        justify-self: end;
+        // background-color:$main-text-color;
+        cursor: pointer;
+        // z-index: 55;
+    }
+    &__form_delete::after{
+            position: absolute;
+            content: "";
+            top: 10px;
+            right: 0;
+            width: 20px;
+            height: 2px;
+            background-color:$theme-color;
+            transform: rotate(-45deg)
+    }    
+    &__form_delete::before{
+        position: absolute;
+        content: "";
+        top: 10px;
+        right: 0;
+        width: 20px;
+        height: 2px;
+        background-color:$theme-color;
+        transform: rotate(45deg) 
+}   
+    &__form_button {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    &__form_more  {
+        // width: 100px;
+        // height: 40px;
+        // border-radius: 3px;
+        // background:$main-text-color;
+        // color: $theme-color;
+        @extend .btn__search;
+        width: 80px;
+        height: 30px;
+        font-size: 12px;
+        padding: 0;
+        margin-top: 10px;
+    }
+    &__form_edit  {
+        // width: 100px;
+        // height: 40px;
+        // border-radius: 3px;
+        // background:$main-text-color;
+        // color: $theme-color;
+        @extend .visit__form_more;
+
+    }
+    &__form_hide {
+        display: none;
+    }
+}
+#form-description {
+    display: none;
+}

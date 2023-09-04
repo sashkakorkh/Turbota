@@ -1,0 +1,9 @@
+{
+    "path-autocomplete.pathMappings": {
+        "path-autocomplete.pathMappings": {
+            "@img": "${folder}/src/img", // alias for /test
+            "@scss": "${folder}/src/scss", // the absolute root folder is now /src,
+            "@js": "${folder}/src/js", // the relative root folder is now /src
+    },
+}
+}

@@ -1,0 +1,17 @@
+// @import "fonts";
+@import "reset";
+@import "vars";
+@import "mixins";
+
+@import "components/components.scss";
+@import "sections/sections.scss";
+
+* {
+    font-family: $main-font;
+    font-weight: $bolt-font-weight;
+}
+
+body {
+    background-color: $main-text-color;
+    min-height: 100vh; 
+}
